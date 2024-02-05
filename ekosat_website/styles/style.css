@@ -1,0 +1,228 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;                         /* --main-color: #e2e2e2;
+                                        --black-color: #000000b7;
+                                        --border: 0.1rem solid #1212128f;*/
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+    list-style: none;
+}
+:root{
+    --main-color: #dbf0f8;
+    --black-color: #000000ca;
+    --font-color: #1c9ded;
+    --border: 0.1rem solid #1212128f;
+}
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;   
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;   
+}
+body{
+    background-color: var(--main-color);
+}
+
+/*! header start */
+.header .logo img{
+    height: 8.5rem;
+}
+.header .logo:hover{
+    box-shadow: 0px 0px 10px -2px #000000;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    height: 8.7rem;
+    display: flex;
+    padding: 0 7%;
+    margin: 2rem 5%;
+    border-radius: 30rem;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 8px -2px rgb(0, 0, 0.1);
+    position: sticky;
+    top: 0.3rem;
+    z-index: 1000;
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+.header .navbar a:hover{
+    color: #000000;
+    border-color: #000000;
+    padding-bottom: 0.7rem;
+    transition: 0.3s;
+}
+.header .navbar .active{            /*! hangi sayfada bulunulacak ise active classı o sayfada olsun ve altında çizgi kalsın öyle */
+    border-color: #000000;
+    color: #000000;
+    padding-bottom: 0.7rem;
+}
+.header .navbar .buttons #search-btn{
+    font-size: 2.2rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+.header .navbar .buttons #search-btn:hover{
+    color: var(--font-color);
+    transition: 0.01ms;
+}
+.header .navbar .buttons #search-btn:active{
+    color: var(--font-color);
+    transition: 0.01ms;
+}
+.header .search-form{
+    padding: 0rem 0.4rem;
+    position: absolute;
+    top: 115%;
+    right: 33.5%;
+    background-color: rgb(255, 255, 255);
+    width: 50rem;
+    height: 4.1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 8px -2px rgb(0, 0, 0.1);
+    transform: scaleY(0);
+}
+.header .search-form.active{
+    transform: scaleY(1);
+}
+.header .search-form i{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1rem;
+    color: var(--black-color);
+}
+.header .search-form input{
+    width: 100%;
+    margin-left: 1rem;
+    text-transform: lowercase;
+}
+.header .search-form i:hover{
+    color: var(--font-color);
+    transition: 0.3s;
+}
+.header .search-form i:active{
+    color: var(--font-color);
+    transition: 0.3;
+}
+/*! header end */
+
+/*! section start */
+.section{
+    padding: 0rem 11%;
+    font-size: 1.3rem;
+    display: flex;
+}
+.section .side-bar{
+    width: 24%;
+    padding-left: 2rem;
+    margin-top: -1rem;
+} 
+.section .side-bar .side-bar-sub{
+    border-bottom: 0.05rem solid rgb(171, 171, 171);
+    padding: 1rem 0rem;
+}
+.section .side-bar .side-bar-sub .side-bar-header h3{
+    font-weight: 549;
+} 
+.section .side-bar .side-bar-sub .side-bar-header h3 a:hover{
+    color: black;  
+}
+.section .side-bar .side-bar-sub .side-bar-header h3 a{
+    color: var(--font-color);
+    font-size: 1.45rem; 
+    margin-left: 0.54rem;
+} 
+.section .side-bar .side-bar-sub .side-bar-header{
+    display: flex;
+}
+.section .side-bar .side-bar-sub .side-bar-header i{
+    font-size: 1.95rem;
+    color: black;
+    background-color: transparent;
+} 
+.section .side-bar .side-bar-sub a{
+    font-size: 1.35rem;
+    color: black;
+} 
+.section .side-bar .side-bar-sub a:hover{
+    color: black;
+    border-bottom: 0.1rem solid;
+} 
+.section .side-bar .side-bar-sub .items{
+    padding-left: 3rem;
+}
+.section .side-bar .side-bar-sub .items ul li{
+    margin-top: 0.3rem;
+}
+.section .container{
+    width: 86%;
+    padding-left: 2rem;
+    padding-right: 2.3rem;
+}
+.section .container .content-header{
+    border-bottom: 0.05rem solid rgb(168, 168, 168);
+    padding-bottom: 0.6rem;
+    font-size: 1.4rem;
+}
+.section .container .content{
+    padding: 1.2rem 0rem;
+}
+/*! section end */  
+
+/*! footer start */
+.footer{
+    width:100%;
+    height:25rem;
+    margin-top: 50%;
+    padding-left: 7%;
+    padding-right: 1%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: #afdef2;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: 20%;
+    margin-left: 6.6rem;
+    padding-left: 0.3rem;
+}           
+.col h4{
+    font-size: 1.7rem;
+    font-weight: 549;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+.col a{
+    color: var(--black-color);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    display: block;
+    transition: all 0.3s ease;
+    margin-top: 0.9rem;
+}
+.col a:hover{
+    color: white;
+    padding-left: 0.8rem;
+}
+/*! footer end */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');

@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="İndexMessages.master.cs" Inherits="ekosat_website.İndexMessages" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ekosat | admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="images/ekosat-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleadmin.css">
+    <link rel="stylesheet" href="styles/stylecontact.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--! header start-->
+    <header class="header">
+        <a href="Admin.aspx" class="logo">
+            <img src="images/ekosat-logo.png" alt="logo">
+        </a>
+        <nav class="navbar"> 
+            <i class="fa-solid fa-circle-check"></i> <a href="#"> Confirm Ad</a>
+            <i class="fa-solid fa-message"></i> <a href="#" class="active">Messages</a>
+        </nav> 
+        <div class="navbar">
+            <i class="fa-solid fa-right-from-bracket"></i> <a href="Logout.aspx">Logout</a>
+        </div>
+    </header>
+    <!--! header end -->
+
+    <section class="section-contact">
+         <div class="container">
+            <h2>Messages</h2>
+            <div class="contact-form">
+                <div class="form">
+                <form id="form1" runat="server">
+                    <div>
+                      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                      </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+               </div>
+            </div>   
+         </div>
+    </section>
+
+
+    <script src="js/scriptindex.js"></script>
+</body>
+</html>
+
+
+   
+
+   

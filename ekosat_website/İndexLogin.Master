@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="İndexLogin.master.cs" Inherits="ekosat_website.İndexLogin" %>
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head runat="server">
+    <title>Login</title>
+    <link rel="shortcut icon" href="images/ekosat-logo.png" type="image/x-icon">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

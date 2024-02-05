@@ -1,0 +1,107 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;                         /* --main-color: #e2e2e2;
+                                        --black-color: #000000b7;
+                                        --border: 0.1rem solid #1212128f;*/
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: 0.3s ease;
+    list-style: none;
+}
+:root{
+    --main-color: #dbf0f8;
+    --black-color: #000000ca;
+    --font-color: #1c9ded;
+    --border: 0.1rem solid #1212128f;
+}
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;   
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;   
+}
+body{
+    background-color: var(--main-color);
+    min-height: 100vh;
+}
+/*! contact start*/
+.section-contact{
+    text-align: center;
+    padding: 1rem;
+}
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.container h2{
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+    color: var(--black-color);
+    text-align: center;
+}
+.contact-form{
+    display: flex;
+    text-align: left;
+}
+.contact-form h3{
+    font-size: 1.9rem;
+    margin-bottom: 2rem;
+    color: var(--black-color);
+}
+.contact-form .form{
+    margin-right: 14rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+.contact-form .form .input-box{
+    margin-bottom: 1.6rem;
+}
+
+.contact-form .form .input-box .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--font-color);
+}
+.contact-form .form .input-box .box-message {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    border: 0.1rem solid var(--font-color);
+}    
+.contact-form .form .input-box .box:focus,
+.contact-form .form .input-box .box-message:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0.2rem #000000;
+}
+.contact-form .contact-logo a img{
+    width: 20rem;
+    margin-top: 8.5rem;
+    margin-left: 5rem;
+}
+.btn{
+    display: inline-block;
+    width: 100%;
+    height: 4.5rem;
+    background: var(--font-color);
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 540;
+}
+.btn:hover{
+    color: white;
+    font-size: 1.75rem;
+}
+/*! contact start*/

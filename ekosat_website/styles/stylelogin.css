@@ -1,0 +1,164 @@
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;                         /* --main-color: #e2e2e2;
+                                        --black-color: #000000b7;
+                                        --border: 0.1rem solid #1212128f;*/
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: 0.3s ease;
+    list-style: none;
+}
+:root{
+    --main-color: #dbf0f8;
+    --black-color: #000000ca;
+    --font-color: #1c9ded;
+    --border: 0.1rem solid #1212128f;
+}
+
+/*! base html codes */
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;   
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;   
+}
+body{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.section-login{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border-radius: 0.6rem;
+    border: 0.1rem solid var(--font-color);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 0.1rem rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13.1rem 0rem 13.1rem;
+}
+.section-login .form-box-login{
+    width: 100%;
+    padding: 4rem;
+}
+.form-box-login h2{
+    font-size: 3rem;
+    color: var(--font-color);
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 2px solid black;
+    margin: 3rem 0rem;
+    padding: 0.2rem;
+}
+.input-box label{
+    position: absolute;     
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 540;
+    pointer-events: none;
+    transition: 0.5s;
+    margin-top: 0.55rem;
+    margin-left: 0.2rem;
+}
+.input-box .box:focus~label,
+.input-box .box:valid~label{
+    top: -0.5rem;
+    margin-left: -0.15rem;   
+}
+.input-box .box{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-top: 1rem;
+    padding: 1.6rem 3rem 0rem 0.2rem;
+    font-size: 1.4rem;
+    color: black;
+}
+.input-box .icon{
+    position: absolute;
+    right: 0.6rem;
+    font-size: 1.6rem;
+    line-height: 5.9rem;
+}
+.input-box #show-lock,
+.input-box #show-unlock {
+    position: absolute;
+    right: 0.6rem;
+    font-size: 1.6rem;
+    line-height: 5.9rem;
+    cursor: pointer;
+}
+.remember-forgot{
+    font-size: 1.32rem;
+    color: black;
+    font-weight: 500;
+    margin: -1.5rem 0rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot .checkbox{
+    accent-color: var(--black-color);
+    margin-right: 0.7rem;
+}
+.remember-forgot .remember{
+    margin-left: -12rem ;
+}
+.remember-forgot a:hover{
+    color: black;
+}
+.btn{
+    width: 100%;
+    height: 4.5rem;
+    background: var(--font-color);
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 540;
+}
+.btn:hover{
+    color: white;
+    font-size: 1.75rem;
+}
+.login-signup{
+    font-size: 1.32rem;
+    color: black;
+    font-weight: 500;
+    margin: 1.5rem 0rem 1.5rem;
+    text-align: center;
+}
+.login-signup p a{
+    color: var(--font-color);
+}
+.login-signup p a:hover{
+    color: black;
+}
+.section-logo img{
+    width: 20rem;
+    position: absolute;
+    margin-left: -40rem;
+    margin-top: 12.4rem;
+}
+.lock-unlock {
+    font-size: 0rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
